@@ -19,13 +19,13 @@ This project is related to the [HackAttic Backup & Restore challenge](https://ha
    ```
 2. Export the necessary environment variables:
 
- ```bash
- export PGPASSWORD=your_postgres_password
- export ACCESS_TOKEN=your_hackattic_access_token
-```
+   ```bash
+   export PGPASSWORD=your_postgres_password
+   export ACCESS_TOKEN=your_hackattic_access_token
+  ```
 3. Build and start the containers:
-```bash
-docker-compose up --build
-```
+  ```bash
+  docker-compose up --build
+  ```
 The application will then run using the provided environment variables.
 If you have any questions or issues, please feel free to reach out!
