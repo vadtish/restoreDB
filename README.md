@@ -28,5 +28,6 @@ This project is related to the [HackAttic Backup & Restore challenge](https://ha
   ```bash
   docker-compose up --build
   ```
+
 The application will then run using the provided environment variables.
 If you have any questions or issues, please feel free to reach out!
