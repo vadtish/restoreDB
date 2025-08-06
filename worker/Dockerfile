@@ -5,7 +5,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     jq \
     postgresql-client \
     gzip \
-  && rm -rf /var/lib/apt/lists/*
+    ca-certificates \
+ && rm -rf /var/lib/apt/lists/*
 
 COPY run.sh /run.sh
 RUN chmod +x /run.sh
