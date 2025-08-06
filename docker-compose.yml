@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  db:
+    image: postgres:10.19
+    environment:
+      POSTGRES_PASSWORD: ${PGPASSWORD}
+    ports:
+      - "5432:5432"
+
+  worker:
+    build: ./worker
+    depends_on:
+      - db
+    environment:
+      ACCESS_TOKEN: ${ACCESS_TOKEN}
+      PGPASSWORD: ${PGPASSWORD}
+    networks:
+      - default
+
+networks:
+  default:
