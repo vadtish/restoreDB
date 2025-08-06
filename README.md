@@ -24,6 +24,7 @@ This project is related to the [HackAttic Backup & Restore challenge](https://ha
    export ACCESS_TOKEN=your_hackattic_access_token
   ```
 3. Build and start the containers:
+
   ```bash
   docker-compose up --build
   ```
